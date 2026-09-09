@@ -36,7 +36,6 @@
     }
     img { max-width: 100%; display: block; }
 
-    /* NAV */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 16px 32px;
@@ -69,7 +68,6 @@
       color: var(--gold); font-size: 1.5rem; cursor: pointer;
     }
 
-    /* HERO - 16:9 friendly */
     .hero {
       min-height: 92vh;
       display: grid;
@@ -119,7 +117,6 @@
     }
     .btn-outline:hover { background: rgba(201,162,39,0.1); }
 
-    /* Hero image - 4:5 vertical look */
     .hero-visual {
       position: relative;
       border-radius: 18px;
@@ -134,7 +131,6 @@
       object-fit: cover;
     }
 
-    /* SECTIONS */
     section { padding: 90px 40px; }
     .container { max-width: 1140px; margin: 0 auto; }
     .section-label {
@@ -152,7 +148,6 @@
       font-weight: 300; margin-bottom: 44px; font-size: 1.02rem;
     }
 
-    /* ABOUT */
     .about { background: var(--bg-soft); }
     .about-grid {
       display: grid; grid-template-columns: 1.05fr 0.95fr;
@@ -181,7 +176,6 @@
       width: 100%; height: 100%; object-fit: cover;
     }
 
-    /* MENU - 4:3 cards */
     .menu-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -229,7 +223,6 @@
       font-size: 1.4rem; font-weight: 600; color: var(--gold);
     }
 
-    /* PACKAGES */
     .packages { background: var(--bg-soft); }
     .package-grid {
       display: grid;
@@ -284,7 +277,6 @@
     }
     .package-card .btn { width: 100%; justify-content: center; }
 
-    /* ORDER */
     .order { text-align: center; }
     .order-box {
       max-width: 580px; margin: 0 auto;
@@ -321,7 +313,6 @@
     footer .logo { display: inline-block; margin-bottom: 8px; font-size: 1.35rem; }
     footer p { color: var(--text-muted); font-size: 0.82rem; font-weight: 300; }
 
-    /* RESPONSIVE */
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -370,7 +361,6 @@
     <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
   </nav>
 
-  <!-- HERO: kiri teks, kanan foto vertikal 4:5 -->
   <section class="hero">
     <div class="hero-text">
       <div class="hero-badge">Rasa Autentik Palembang</div>
@@ -385,12 +375,10 @@
       </div>
     </div>
     <div class="hero-visual">
-      <!-- Ganti src dengan foto produkmu (rasio 4:5 lebih bagus) -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/PEMPEK_PALEMBANG.jpg" alt="Pempek Acik" />
+      <img src="images/pempek-campur.jpg" alt="Pempek Acik Campur" />
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="about" id="tentang">
     <div class="container">
       <div class="about-grid">
@@ -421,14 +409,12 @@
           </div>
         </div>
         <div class="about-photo">
-          <!-- Ganti dengan foto vertikal 4:5 -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pempek_lenjer_dan_pempek_kulit.jpg" alt="Pempek Lenjer & Kulit" loading="lazy" />
+          <img src="images/pempek-campur.jpg" alt="Pempek Acik" loading="lazy" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MENU: kartu 4:3 -->
   <section id="menu">
     <div class="container">
       <div class="section-label">Menu Kami</div>
@@ -438,7 +424,7 @@
       <div class="menu-grid">
         <article class="menu-card">
           <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/PEMPEK_PALEMBANG.jpg" alt="Pempek Telur" loading="lazy" />
+            <img src="images/pempek-telur.jpg" alt="Pempek Telur" loading="lazy" />
           </div>
           <div class="menu-body">
             <h3>Pempek Telur</h3>
@@ -452,7 +438,7 @@
 
         <article class="menu-card">
           <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pempek_lenjer_dan_pempek_kulit.jpg" alt="Pempek Lonjong" loading="lazy" />
+            <img src="images/pempek-lonjong.jpg" alt="Pempek Lonjong" loading="lazy" />
           </div>
           <div class="menu-body">
             <h3>Pempek Lonjong</h3>
@@ -466,7 +452,7 @@
 
         <article class="menu-card">
           <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/PEMPEK_PALEMBANG.jpg" alt="Pempek Adaan" loading="lazy" />
+            <img src="images/pempek-adaan.jpg" alt="Pempek Adaan" loading="lazy" />
           </div>
           <div class="menu-body">
             <h3>Pempek Adaan</h3>
@@ -480,21 +466,7 @@
 
         <article class="menu-card">
           <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pempek_lenjer_dan_pempek_kulit.jpg" alt="Pempek Kulit" loading="lazy" />
-          </div>
-          <div class="menu-body">
-            <h3>Pempek Kulit</h3>
-            <p>Dibuat dari kulit ikan, tekstur unik dan rasa yang kaya.</p>
-            <div class="price">
-              <span class="label">mulai</span>
-              <span class="value">Rp12.000</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="menu-card">
-          <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/PEMPEK_PALEMBANG.jpg" alt="Pempek Keriting" loading="lazy" />
+            <img src="images/pempek-keriting.jpg" alt="Pempek Keriting" loading="lazy" />
           </div>
           <div class="menu-body">
             <h3>Pempek Keriting</h3>
@@ -508,7 +480,21 @@
 
         <article class="menu-card">
           <div class="menu-photo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pempek_lenjer_dan_pempek_kulit.jpg" alt="Cuko Khas" loading="lazy" />
+            <img src="images/pempek-campur.jpg" alt="Pempek Campur" loading="lazy" />
+          </div>
+          <div class="menu-body">
+            <h3>Pempek Campur</h3>
+            <p>Campuran berbagai jenis pempek dalam satu piring. Paling lengkap.</p>
+            <div class="price">
+              <span class="label">mulai</span>
+              <span class="value">Rp25.000</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="menu-photo">
+            <img src="images/pempek-telur.jpg" alt="Cuko Khas" loading="lazy" />
           </div>
           <div class="menu-body">
             <h3>Cuko Khas</h3>
@@ -523,7 +509,6 @@
     </div>
   </section>
 
-  <!-- PACKAGES -->
   <section class="packages" id="paket">
     <div class="container">
       <div class="section-label">Paket Hemat</div>
@@ -579,7 +564,6 @@
     </div>
   </section>
 
-  <!-- ORDER -->
   <section class="order" id="pesan">
     <div class="container">
       <div class="section-label">Pemesanan</div>
